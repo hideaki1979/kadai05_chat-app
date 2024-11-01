@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts指定はreset.cssよりも前に指定しないと適用されない -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Lineアプリ簡易版</title>
+</head>
+<body>
+    <header>
+        <div class="input-container">
+            <input type="text" name="uname" id="uname" disabled>
+            <textarea name="message" id="message" rows="1" placeholder="トーク内容を入力"></textarea>
+            <img src="img/send-button_icon.svg" alt="送信ボタン" id="send">
+            <img src="img/signout.svg" alt="サインアウトボタン" id="signout">
+        </div>
+    </header>
+    <main>
+        <div id="output">
+
+        </div>
+    </main>
+<!-- JQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!--** 以下Firebase **-->
+<script type="module" src="./js/main.js"></script>
+</body>
+</html>

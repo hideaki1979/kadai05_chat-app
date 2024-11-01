@@ -1,0 +1,183 @@
+@charset "utf-8";
+/* 全体にborder-box(heightとwidthにpaddingとmarginを含む)指定をする。 */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;    /* 文字サイズを正しく反映 */
+    /* scroll-padding-top: 100px; */
+}
+
+body {
+    width: 80%;
+    margin: 0 auto;
+    /* GoogleFonts */
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 400;
+}
+
+header {
+    padding-top: 3.5vh;
+    width: 80%;
+    height: 12vh;
+    position: fixed;
+    padding-left: 5%;
+    border: 1px solid black;
+    background-color: whitesmoke;
+    z-index: 10;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding-bottom: 2vh;
+}
+
+#uname {
+    width: 20%;
+    padding-left: 10px;
+    border-radius: 20px;
+}
+
+#message {
+    width: 40%;
+    padding-top: 5px;
+    padding-left: 10px;
+    border-radius: 20px;
+    resize: none;   /* 左下の手動リサイズを隠す */
+    overflow-y: hidden; /* 垂直スクロールバーを隠す */
+    margin-bottom: 5px;
+}
+
+#send {
+    width: 40px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+#signout {
+    width: 40px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+main {
+    padding-top: 13vh;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: rgb(156, 241, 241);
+}
+
+#output {
+    height: 100vh;
+    overflow: auto;
+}
+.yourtalk {
+    width: 50%;
+    height: auto;
+    padding: 10px;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    margin-bottom: 1vh;
+    background-color: white;
+    white-space: pre-wrap;  /* 改行を保持 */
+
+    display: inline-block;
+    position: relative;
+}
+/* 相手吹き出し用 */
+.yourtalk::before {
+    position: absolute;
+    top: -10px;
+    width: 20px;
+    height: 30px;
+    content: '';
+}
+
+/* 相手吹き出し用 */
+.yourtalk.left::before {
+    left: -10px;
+    border-radius: 0 0 0 15px;
+    box-shadow: -3px -17px 0 -7px white inset;
+}
+
+.mytalk {
+    width: 60%;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 1vh;
+    background-color: greenyellow;
+    display: block;
+    position: relative;
+    float: right;
+    clear: both;
+    white-space: pre-wrap;  /* 改行を保持 */
+}
+
+/* ユーザ吹き出し用 */
+.mytalk::before {
+    position: absolute;
+    top: -10px;
+    width: 20px;
+    height: 30px;
+    content: '';
+}
+
+/* ユーザ吹き出し用 */
+.mytalk.right {
+    margin: 0 15px 0 auto;
+}
+.mytalk.right::before {
+    right: -10px;
+    border-radius: 0 0 15px 0;
+    box-shadow: 3px -15px 0 -7px greenyellow inset;
+}
+
+.mytalkupdatearea {
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    float: right;
+    clear: both;
+    margin-bottom: 2vh;
+}
+
+.yourtalkupdatearea {
+    width: 25%;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 2vh;
+}
+
+span {
+    display: block;
+    line-height: 1.7;
+}
+
+.remove,
+.update {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.datetime {
+    font-size: .8rem;
+}
+
+img {
+    width: 1.7em;
+}
+
+.partner-area {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;  /* 画像が潰されないようにするための設定 */
+    gap: 20px;
+    position: relative;
+    clear: both;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts指定はreset.cssよりも前に指定しないと適用されない -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/login.css">
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>ログイン</title>
+</head>
+<body>
+    <header>
+        <h1>ログイン画面</h1>
+        <label class="partner">
+            <select id="select-partner">
+                <!-- トーク相手のプルダウンは固定。 -->
+                <option value="">トーク相手を選択</option>
+                <option value="aaa@mail.com">山田</option>
+                <option value="bbb@mail.com">田中</option>
+                <option value="ccc@mail.com">鈴木</option>
+                <option value="ddd@mail.com">高橋</option>
+            </select>
+        </label>
+    </header>
+    <main id="login-area">
+        <form id="loginform">
+            <input type="email" name="mymail" id="mymail" placeholder="email">
+            <input type="password" name="mypass" id="mypass" placeholder="password">
+            <button type="button" id="login">login</button>
+        </form>
+        <p class="createuser">アカウント作成はこちらから<a href="account_cre.html">新規登録</a></p>
+    </main>
+
+    <!--** 以下Firebase **-->
+    <script type="module" src="./js/index.js"></script>
+</body>
+</html>

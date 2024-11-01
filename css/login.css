@@ -1,0 +1,106 @@
+@charset "utf-8";
+/* 全体にborder-box(heightとwidthにpaddingとmarginを含む)指定をする。 */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;    /* 文字サイズを正しく反映 */
+}
+
+body {
+    /* body部の余白をなくすためのおまじない */
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+    height: 100vh;
+    /* GoogleFonts */
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: rgb(175, 239, 244);
+}
+
+header {
+    text-align: center;
+    margin: 5vh auto;
+    font-size: 2rem;
+    font-weight: bold;
+    /* background-color: rgb(71, 226, 237); */
+}
+
+.partner {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    margin: .3em 0;
+}
+
+.partner::after {
+    position: absolute;
+    right: 15px;
+    width: 10px;
+    height: 7px;
+    background-color: #535353;
+    clip-path: polygon(0 0, 100% 0, 50% 100%);
+    content: "";
+}
+
+.partner select {
+    appearance: none;
+    min-width: 230px;
+    height: 2.8em;
+    padding: .4em calc(.8em + 30px) .4em .8em;
+    border: none;
+    border-bottom: 2px solid #d0d0d0;
+    background-color: #fff;
+    color: #333333;
+    font-size: .5em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#login-area {
+    width: 100%;
+    /* background-color: rgb(119, 230, 238); */
+}
+
+#loginform {
+    /* ↓ログインフォームを画面全体の中央に配置 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#mymail {
+    margin: 3vh 0;
+    display: block;
+    min-width: 200px;
+    font-size: 1.3rem;
+    border-radius: 10px;
+}
+
+#mypass {
+    display: block;
+    margin-bottom: 3vh;
+    min-width: 200px;
+    font-size: 1.3rem;
+    border-radius: 10px;
+}
+
+#login {
+    display: block;
+    margin-bottom: 3vh;
+    border-radius: 20px;
+    width: 10em;
+    font-size: 1.3rem;
+    background-color: rgb(227, 224, 224);
+    cursor: pointer;
+}
+
+.createuser {
+    text-align: center;
+    line-height: 2.5rem;
+}
