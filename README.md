@@ -45,9 +45,6 @@ Authenticationで全ユーザーの情報を取得する方法を調べたので
 チャットアプリを進めようと思いました。
 
 - [参考記事]
-  - 1. JavaScriptでページ遷移＆値渡し！5つの使い方を徹底解説
-  　　 [https://jp-seemore.com/web/4885/]
-  - 2. JavaScriptを使ってtextareaの高さを入力された内容に合わせて自動で可変させる方法
-  　　　[https://urakata.me/blog/js-textarea-auto-height/]
-  - 3. Firebase Authenticationドキュメント
-  　　　[https://firebase.google.com/docs/auth?hl=ja&_gl=1*kit31t*_up*MQ..*_ga*MTM5NjMwNzk4Ny4xNzMwMTA2NDQ4*_ga_CW55HF8NVT*MTczMDEwNjQ0OC4xLjAuMTczMDEwNjQ0OC4wLjAuMA..]
+  - 1. [JavaScriptでページ遷移＆値渡し！5つの使い方を徹底解説](https://jp-seemore.com/web/4885/)
+  - 2. [JavaScriptを使ってtextareaの高さを入力された内容に合わせて自動で可変させる方法](https://urakata.me/blog/js-textarea-auto-height/)
+  - 3. [Firebase Authenticationドキュメント](https://firebase.google.com/docs/auth?hl=ja&_gl=1*kit31t*_up*MQ..*_ga*MTM5NjMwNzk4Ny4xNzMwMTA2NDQ4*_ga_CW55HF8NVT*MTczMDEwNjQ0OC4xLjAuMTczMDEwNjQ0OC4wLjAuMA..)
